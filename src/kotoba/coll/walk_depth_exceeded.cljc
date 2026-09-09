@@ -1,10 +1,11 @@
 (ns kotoba.coll.walk-depth-exceeded
-  "walk-depth-exceeded! -- one definition, addressed on its own.
+  "walk-depth-exceeded! -- addressed on its own.
 
-  Split out of kotoba.lang.text on 2026-09-09. The unit here is the
-  DEFINITION, not the library: this repo holds walk-depth-exceeded! and names, in its
-  deps.edn, exactly the definitions walk-depth-exceeded! reaches. Nothing else."
-  (:require [kotoba.coll.walk :refer [walk]]))
+  Split out of kotoba.lang.coll on 2026-09-09 (ADR-2609091200). The unit
+  here is the DEFINITION, and this repo's deps.edn names exactly the
+  definitions it reaches -- nothing else.
+"
+  )
 
 (defn walk-depth-exceeded! [limit]
   (throw (ex-info "coll walk exceeds bounded depth limit"

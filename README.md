@@ -2,4 +2,4 @@
 
 `kotoba.coll.walk-depth-exceeded/walk-depth-exceeded!`
 
-One definition. Reaches kotoba.coll.walk.
+One definition. Reaches nothing else in this family.
